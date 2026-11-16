@@ -135,7 +135,6 @@ h2.sec{font-family:var(--serif);font-weight:800;font-size:clamp(24px,3.4vw,32px)
 .seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
 .top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 6px}
 .lang button{padding:4px 10px;font-size:12.5px}
-td.up{color:var(--up);font-weight:600}td.down{color:var(--down);font-weight:600}td.same{color:var(--ink)}
 </style>
 
 <header class="nav"><div class="in">
@@ -212,8 +211,9 @@ td.up{color:var(--up);font-weight:600}td.down{color:var(--down);font-weight:600}
 <p class="intro" data-i="s5i"></p>
 <div class="row"><div class="seg" role="group" data-ia="relevance" id="f-rel-5"><button data-v="" aria-pressed="false" data-i="all"></button><button data-v="Núcleo" aria-pressed="true" data-vi="Núcleo"></button><button data-v="Conexo" aria-pressed="false" data-vi="Conexo"></button><button data-v="Periférico" aria-pressed="false" data-vi="Periférico"></button></div></div>
 <div class="card tbl"><table id="tbl"><thead><tr>
-<th data-k="ia" tabindex="0" data-i="thInst"></th><th data-k="n" tabindex="0" data-i="thProg"></th><th data-k="r" tabindex="0" data-i="relevance"></th><th data-k="nv" tabindex="0" data-i="level"></th><th data-k="reg" tabindex="0" data-i="thReg"></th><th data-k="f" class="n" tabindex="0" data-i="thFrom"></th><th data-k="l" class="n" tabindex="0" data-i="thTo"></th><th data-k="act" tabindex="0" data-i="thStatus"></th><th data-k="m25" class="n" tabindex="0" data-i="thM25"></th><th data-k="m26" class="n" tabindex="0" data-i="thM26"></th><th data-k="mat" class="n" tabindex="0" data-i="thMat"></th><th data-k="tit" class="n" tabindex="0" data-i="thTit"></th><th data-k="ara" class="n" tabindex="0" data-i="thFee"></th>
+<th data-k="ia" tabindex="0" data-i="thInst"></th><th data-k="n" tabindex="0" data-i="thProg"></th><th data-k="r" tabindex="0" data-i="relevance"></th><th data-k="nv" tabindex="0" data-i="level"></th><th data-k="reg" tabindex="0" data-i="thReg"></th><th data-k="f" class="n" tabindex="0" data-i="thFrom"></th><th data-k="l" class="n" tabindex="0" data-i="thTo"></th><th data-k="act" tabindex="0" data-i="thStatus"></th><th data-k="v26" class="n" tabindex="0" data-i="thV26"></th><th data-k="mat" class="n" tabindex="0" data-i="thMat"></th><th data-k="tit" class="n" tabindex="0" data-i="thTit"></th><th data-k="ara" class="n" tabindex="0" data-i="thFee"></th>
 </tr></thead><tbody></tbody></table></div>
+<p class="note" data-i="tblNote"></p>
 </section>
 
 <section id="claves">
@@ -256,8 +256,8 @@ s1:'Change over time',s1i:'The selected indicator, year by year. Split it by any
 s2:'Regions',s2i:'The selected indicator by region of the campus, summed over the year range. Tap a region on the map or in the list to filter the whole page.',
 s3:'Composition',s3i:'The same indicator broken down by each variable in the dataset, plus the profile of enrolled students and graduates.',
 s4:'Programme life cycle',s4i:'Each bar runs from the first to the last year a programme appears in any of the three datasets. Solid segments are years on offer; light ones are years with enrolment or graduates only. Bars that stop before 2026 are closed programmes.',
-s5:'Programmes',s5i:'Every programme that passes the filters, with totals for the year range. Sort by any column. Programme names are the official Spanish names.',
-thInst:'Institution',thProg:'Programme',thReg:'Region',thFrom:'From',thTo:'To',thStatus:'Status 2026',thM25:'Enrolment 2025',thM26:'Enrolment 2026',thMat:'Enrolment (period)',thTit:'Graduates (period)',thFee:'Annual fee',
+s5:'Programmes',s5i:'Every programme that passes the filters. Enrolment and graduates are totals since each programme began, whatever the year range. Sort by any column. Programme names are the official Spanish names.',
+thInst:'Institution',thProg:'Programme',thReg:'Region',thFrom:'From',thTo:'To',tblNote:'Places 2026 are the vacancies each programme reported to SIES for 2026; a dash means none were reported. SIES takes its enrolment snapshot very early in the academic year (around 30 April), so diploma courses that start later, or that skip a cohort, show little or no enrolment for that year, and graduates can exceed enrolment.',thStatus:'Status 2026',thV26:'Places 2026',thMat:'Enrolment since start',thTit:'Graduates since start',thFee:'Annual fee',
 onOffer:'On offer',closed:'Closed',noProg:'No programme matches these filters',noData:'No data for these filters',
 s6:'Key findings',
 k1t:'A small, new core',k1:'Explicit training in public science communication appears in 2020 and reaches 10 programmes in 2026, half of them new that year. All are university diploma courses, nine of them at CRUCH universities. There are no undergraduate or master’s programmes, and nothing at professional institutes or technical training centres.',
@@ -303,8 +303,8 @@ s1:'Evolución en el tiempo',s1i:'El indicador elegido, año a año. Desagrégal
 s2:'Territorio',s2i:'El indicador elegido por región de la sede, sumado en el rango de años. Toca una región en el mapa o en la lista para filtrar toda la página.',
 s3:'Composición',s3i:'El mismo indicador repartido por cada variable de la base, y el perfil de quienes se matriculan y titulan.',
 s4:'Ciclo de vida de los programas',s4i:'Cada barra va del primer al último año en que el programa aparece en alguna de las tres bases. Los tramos sólidos son años en oferta; los claros, años con solo matrícula o titulados. Las barras que no llegan a 2026 son programas cerrados.',
-s5:'Programas',s5i:'Todos los programas que pasan los filtros, con sus totales en el rango de años. Ordena por cualquier columna.',
-thInst:'Institución',thProg:'Programa',thReg:'Región',thFrom:'Desde',thTo:'Hasta',thStatus:'Estado 2026',thM25:'Matrícula 2025',thM26:'Matrícula 2026',thMat:'Matrícula (periodo)',thTit:'Titulados (periodo)',thFee:'Arancel',
+s5:'Programas',s5i:'Todos los programas que pasan los filtros. Matrícula y titulados son totales desde el inicio de cada programa, sin importar el rango de años. Ordena por cualquier columna.',
+thInst:'Institución',thProg:'Programa',thReg:'Región',thFrom:'Desde',thTo:'Hasta',tblNote:'Vacantes 2026 son las que cada programa informó al SIES para 2026; un guion indica que no se informaron. El corte de matrícula del SIES es muy temprano en el año académico (cerca del 30 de abril), por lo que los diplomados que comienzan más tarde, o que no abren cohorte un año, registran poca o ninguna matrícula ese año, y los titulados pueden superar a los matriculados.',thStatus:'Estado 2026',thV26:'Vacantes 2026',thMat:'Matrícula desde el inicio',thTit:'Titulados desde el inicio',thFee:'Arancel',
 onOffer:'En oferta',closed:'Cerrado',noProg:'Ningún programa cumple los filtros',noData:'Sin datos con estos filtros',
 s6:'Lo que dejan los datos',
 k1t:'Un núcleo nuevo y pequeño',k1:'La formación explícita en comunicación pública de la ciencia aparece en 2020 y llega a 10 programas en 2026, la mitad de ellos nuevos ese año. Son todos diplomados universitarios, nueve de universidades del CRUCH. No hay pregrados, magísteres ni oferta de institutos profesionales o CFT.',
@@ -516,7 +516,7 @@ function progStats(rel){
   const rows=R.filter(r=>rowOk(r,{rel}));const by=d3.group(rows,r=>r.p);
   const byAll=d3.group(R.filter(r=>rowOk(r,{ignoreYears:true,rel})),r=>r.p);
   return [...byAll.keys()].filter(p=>by.has(p)).map(p=>{const pr=P[p],rr=by.get(p),ra=byAll.get(p);const lastAra=ra.filter(r=>r.ara>0).sort((a,b)=>b.y-a.y)[0];
-    return {pi:p,ia:pr.ia,n:pr.n,r:pr.r,nv:pr.nv,reg:[...new Set(ra.map(r=>REG[r.reg]?regN(r.reg):tv('Sin dato')))].join(', '),f:pr.f,l:pr.l,act:pr.act,m25:d3.sum(ra.filter(r=>r.y===2025),r=>r.mat),m26:d3.sum(ra.filter(r=>r.y===2026),r=>r.mat),mat:d3.sum(rr,r=>r.mat),tit:d3.sum(rr,r=>r.tit),ara:lastAra?lastAra.ara:null,years:ra};});
+    return {pi:p,ia:pr.ia,n:pr.n,r:pr.r,nv:pr.nv,reg:[...new Set(ra.map(r=>REG[r.reg]?regN(r.reg):tv('Sin dato')))].join(', '),f:pr.f,l:pr.l,act:pr.act,v26:d3.sum(ra.filter(r=>r.y===2026),r=>r.vac)||null,mat:d3.sum(ra,r=>r.mat),tit:d3.sum(ra,r=>r.tit),ara:lastAra?lastAra.ara:null,years:ra};});
 }
 function renderGantt(){
   const host=document.getElementById('gantt');const st=progStats(S.rel4).sort((a,b)=>a.f-b.f||a.l-b.l||a.ia.localeCompare(b.ia));
@@ -542,9 +542,9 @@ function renderTable(){
   const val=(s,k)=>k==='r'||k==='nv'?tv(s[k]):s[k];
   st.sort((a,b)=>{const A=val(a,k),B=val(b,k);if(A==null)return 1;if(B==null)return -1;return (typeof A==='string'?A.localeCompare(B,LOC()):A-B)*d;});
   document.querySelectorAll('#tbl th').forEach(th=>th.setAttribute('aria-sort',th.dataset.k===k?(d>0?'ascending':'descending'):'none'));
-  if(!st.length){tb.innerHTML=`<tr><td colspan="13" class="empty">${t('noProg')}</td></tr>`;return;}
+  if(!st.length){tb.innerHTML=`<tr><td colspan="12" class="empty">${t('noProg')}</td></tr>`;return;}
   tb.replaceChildren(...st.map(s=>{const tr=document.createElement('tr');
-    const cells=[[s.ia],[s.n],[`<span class="pill p-${RELK[s.r]}">${esc(tv(s.r))}</span>`,1],[tv(s.nv)],[s.reg],[s.f,0,'n'],[s.l,0,'n'],[s.act?`<span class="st-on">${t('onOffer')}</span>`:`<span class="st-off">${t('closed')}</span>`,1],[fmtN(s.m25),0,'n'],[fmtN(s.m26),0,'n '+(s.m26>s.m25?'up':s.m26<s.m25?'down':'same')],[fmtN(s.mat),0,'n'],[fmtN(s.tit),0,'n'],[s.ara?t('moneyFull')(s.ara):'—',0,'n']];
+    const cells=[[s.ia],[s.n],[`<span class="pill p-${RELK[s.r]}">${esc(tv(s.r))}</span>`,1],[tv(s.nv)],[s.reg],[s.f,0,'n'],[s.l,0,'n'],[s.act?`<span class="st-on">${t('onOffer')}</span>`:`<span class="st-off">${t('closed')}</span>`,1],[s.v26?fmtN(s.v26):'—',0,'n'],[fmtN(s.mat),0,'n'],[fmtN(s.tit),0,'n'],[s.ara?t('moneyFull')(s.ara):'—',0,'n']];
     cells.forEach(([v,html,cl])=>{const td=document.createElement('td');if(cl)td.className=cl;if(html)td.innerHTML=v;else td.textContent=v;tr.appendChild(td);});return tr;}));
 }
 document.querySelectorAll('#tbl th').forEach(th=>{const go=()=>{S.sort={k:th.dataset.k,d:S.sort.k===th.dataset.k?-S.sort.d:1};renderTable();};th.onclick=go;th.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}};});
